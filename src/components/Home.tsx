@@ -25,8 +25,8 @@ const Home = () => {
         <Image
           src={"/myPhoto.jpeg"}
           alt="myPhoto"
-          w={182}
-          h={182}
+          w={"182"}
+          h={"182"}
           className=" h-[182px] w-[182px] rounded-full object-cover border-[0.35rem] border-white shadow-xl"
         />
         <motion.span

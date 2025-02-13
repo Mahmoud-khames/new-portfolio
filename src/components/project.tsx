@@ -58,8 +58,8 @@ export default function Project({
         </div>
         <Image
           src={imageUrl}
-          w={452}
-          h={452}
+          w={"452"}
+          h={"452"}
           alt={imageUrl}
           className="absolute hidden sm:block top-8 -right-40 w-[452px] rounded-t-lg shadow-2xl
         transition 

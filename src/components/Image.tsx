@@ -1,6 +1,6 @@
 import { IKImage } from "imagekitio-react";
 
-const Image = ({ src, alt, className, w, h }) => {
+const Image = ({ src, alt, className, w, h }: {src :string, alt :string, className :string, w :string, h :string}) => {
   return (
     <IKImage
       urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT}
