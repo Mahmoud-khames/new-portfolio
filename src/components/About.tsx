@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const { ref } = UseSectionsSelector("About", 0.3);
+  
+ 
   return (
     <motion.section
       ref={ref}

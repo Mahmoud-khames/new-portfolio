@@ -2,6 +2,7 @@ import { links } from "../lib/data";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { useActiveSectionContext } from "../context/active-sections";
+
 const Navbar = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();

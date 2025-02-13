@@ -3,7 +3,6 @@ import React from "react";
 // import { FaReact } from "react-icons/fa6";
 import { MdOutlineWorkOutline } from "react-icons/md";
 
-
 export const projects = [
   {
     name: "Portfolio",
@@ -44,7 +43,6 @@ export const links = [
     title: "Skills",
     hash: "#skills",
   },
-
   {
     title: "Projects",
     hash: "#projects",
@@ -148,7 +146,7 @@ export const experiencesData = [
     location: "Remotely",
     description:
       "Software Engineer (Full Stack). Developed and maintained high-performance full-stack applications for websites using technologies such as React.js, Node.js, MongoDB, and Firebase. Designed and implemented RESTful APIs to support mobile feature development team. Practiced creating clone websites with complex designs, demonstrating proficiency in front-end technologies including HTML, CSS, and JavaScript. Collaborated with cross-functional teams to deliver on-time projects, leveraging expertise in both front-end and back-end development to ensure seamless integration and functionality. Completed design projects to meet budget, equipment, performance, and legal requirements.",
-    icon: React.createElement(MdOutlineWorkOutline ),
+    icon: React.createElement(MdOutlineWorkOutline),
     date: "02/2024 - 02/2025",
   },
 ] as const;

@@ -1,17 +1,18 @@
 import UseSectionsSelector from "../hooks/useSectionsSelector";
 import SectionHeading from "./section-heading";
 import Project from "./project";
-
 import { projectsData } from "../lib/data";
 import React from "react";
+import { motion } from "framer-motion"; 
+export default function Projects() {
+  const { ref } = UseSectionsSelector("Projects", 0.2);
 
-const Projects = () => {
-  const { ref } = UseSectionsSelector("Projects", 0.3);
+ 
   return (
-    <section
+    <motion.section
       ref={ref}
-      id="projects"
-      className="scroll-mt-28 mb-28 mt-[150px]"
+       id="projects"
+      className="scroll-mt-28 mb-28 mt-[150px] relative"
     >
       <SectionHeading>My projects</SectionHeading>
       <div>
@@ -21,8 +22,8 @@ const Projects = () => {
           </React.Fragment>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
-};
+}
 
-export default Projects;
+

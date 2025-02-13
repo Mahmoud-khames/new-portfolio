@@ -8,13 +8,16 @@ import { FaSquareGithub } from "react-icons/fa6";
 import UseSectionsSelector from "../hooks/useSectionsSelector";
 
 const Home = () => {
-    const { ref } = UseSectionsSelector("Home", 0.5);
+  const { ref } = UseSectionsSelector("Home", 0.5);
   return (
     <section
       ref={ref}
       id="home"
       className=" flex flex-col gap-4 items-center justify-center mt-[130px] mx-auto mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
+      <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+
       {/* img */}
       <motion.div
         initial={{ y: -100, opacity: 0 }}
@@ -60,26 +63,27 @@ const Home = () => {
       </motion.h1>
       {/* buttons */}
       <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ 
-        duration: 0.3 ,
-        delay : 0.1
-     }}
-      className="flex flex-col sm:flex-row items-center gap-4">
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.3,
+          delay: 0.1,
+        }}
+        className="flex flex-col sm:flex-row items-center gap-4"
+      >
         <a
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center rounded-full gap-2 hover:scale-110 hover:bg-gray-950 active:scale-105 transition "
         >
           Contact me here
           <span className="opacity-70 group-hover:translate-x-1 transition  text-2xl my-auto">
-            <IoIosArrowRoundForward />
+            <IoIosArrowRoundForward className="opacity-70 group-hover:translate-x-1 transition" />
           </span>
         </a>
         <a
-        download={true}
+          download={true}
           href="/CV.pdf"
-          className="group bg-white text-gray-900 px-7 py-3 flex items-center justify-center rounded-full gap-2 hover:scale-110  active:scale-105 transition dark:bg-white/10 "
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 "
         >
           Download CV
           <span className="opacity-70 group-hover:translate-y-1 transition  text-xl my-auto ">
@@ -89,14 +93,14 @@ const Home = () => {
         <a
           href="https://www.linkedin.com/in/mahmoud-khames/"
           target="_blank"
-          className="group bg-white text-gray-900 p-4 flex items-center justify-center rounded-full gap-2 hover:scale-110  active:scale-105 transition dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Mahmoud-khames"
           target="_blank"
-          className="group bg-white text-gray-900 p-4 flex items-center justify-center rounded-full gap-2 hover:scale-110  active:scale-105 transition dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaSquareGithub />
         </a>
