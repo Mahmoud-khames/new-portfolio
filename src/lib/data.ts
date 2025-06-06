@@ -62,7 +62,7 @@ export const projectsData = [
   {
     title: "E-Commerce Platform",
     description:
-      "A full-featured e-commerce platform with modern UI/UX design and responsive layout. Features multi-language support (English/Arabic) with dynamic content switching, integrated Stripe payment gateway for secure transactions, shopping cart functionality with persistent state management, and optimized performance with SEO.",
+      "A full-featured e-commerce platform with modern UI/UX design and responsive layout. Features multi-language support (English/Arabic) with dynamic content switching, integrated Stripe payment gateway for secure transactions, shopping cart functionality with persistent state management",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
     imageUrl: "e-commerce.png", // You'll need to add this image to your public folder
     link: "https://front-end-e-commerce-seto.vercel.app/en/",
