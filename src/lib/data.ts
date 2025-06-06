@@ -60,6 +60,14 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "E-Commerce Platform",
+    description:
+      "A full-featured e-commerce platform with modern UI/UX design and responsive layout. Features multi-language support (English/Arabic) with dynamic content switching, integrated Stripe payment gateway for secure transactions, shopping cart functionality with persistent state management, and optimized performance with SEO.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    imageUrl: "e-commerce.png", // You'll need to add this image to your public folder
+    link: "https://front-end-e-commerce-seto.vercel.app/en/",
+  },
+  {
     title: "Movie Love",
     description:
       "An interactive platform that allows users to explore the latest movies and TV shows with details, trailers, and images. Features include: Trending movies and TV shows, search by name, and recommendations.",
