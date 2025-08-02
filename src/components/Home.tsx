@@ -23,10 +23,11 @@ const Home = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
+        
         className="flex relative"
       >
         <Image
-          src={"/myPhoto.jpeg"}
+          src={"/myPhoto2.jpeg"}
           alt="myPhoto"
           w={"182"}
           h={"182"}
@@ -38,7 +39,7 @@ const Home = () => {
           transition={{
             type: "spring",
             stiffness: 125,
-            delay: 0.1,
+            delay: 0.1, 
             duration: 0.7,
           }}
           className="absolute bottom-0 right-0 text-4xl "
@@ -59,7 +60,7 @@ const Home = () => {
         <span className="font-bold"> 2 years </span>
         of experience. I enjoy building
         <span className="italic"> sites</span>
-        <span className="underline"> React & NodeJs </span>.
+        <span className="underline"> React - Next & NodeJs </span>.
       </motion.h1>
       {/* buttons */}
       <motion.div
@@ -82,7 +83,7 @@ const Home = () => {
         </a>
         <a
           download={true}
-          href="/CV.pdf"
+          href="/Mahmoud_Khames_Resume.pdf"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 "
         >
           Download CV
